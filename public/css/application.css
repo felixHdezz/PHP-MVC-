@@ -1,0 +1,81 @@
+body{
+	color: #222;
+    font-family: Open Sans;
+    font-size: 1.6em;
+    background: #eee;
+}
+#menu {
+    background: 0 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 10px;
+}
+#menu .navbar {
+    margin-bottom: 0;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container, .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#menu .navbar-brand {
+    color: #13aca2;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+#menu a {
+    color: #ccc;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 20px #000;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+}
+a {
+    color: #13aca2;
+}
+a {
+    text-decoration: none;
+}
+a {
+    background: 0 0;
+}
+
+/*content slider*/
+#slider {
+    height: 500px;
+    background: center center no-repeat #222;
+    background-size: 100%;
+    color: #eee;
+    padding-top: 180px;
+    text-shadow: 2px 2px 10px #222;
+    margin-bottom: 60px;
+}
+#slider, .carousel-caption, .carousel-control, .carousel-indicators, .fa-fw, .fa-li, .posts .post, .posts .post .read-more {
+    text-align: center;
+}
