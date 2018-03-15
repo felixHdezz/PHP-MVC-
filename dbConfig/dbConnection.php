@@ -1,12 +1,14 @@
 <?php
 	class dbConnection
 	{
+		// Credenciales para la conexion a la base de datos
 		public $CONNECTION;
 		public $_SERVER_NAME = "localhost";
 		public $_DATABASE = "chats";
 		public $_USER_NAME = "root";
 		public $_PASSWORD = "";
-
+		
+		// Constructor - conexion a la base de datos MySql
 		public function dbConnection() {
 			try{
 				if (!isset($this->CONNECTION)) {
@@ -17,7 +19,8 @@
 				throw new Exception("Error Processing Request", 1);
 			}
 		}
-
+		
+		// Funcíon para las consultas a la DB
 		public function query($sql){
 			$dbResult = mysql_query($sql, $this->CONNECTION) or die(mysql_error());
 			return $dbResult;
