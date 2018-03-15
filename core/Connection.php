@@ -25,7 +25,7 @@
 				if (mysqli_connect_errno()){
 					echo "Failed to connect to MySQL: " . mysqli_connect_error();
 				}
-            	$con->query("SET NAMES '".$this->CHARSET."'");
+            		$con->query("SET NAMES '".$this->CHARSET."'");
 			}
 			return $con;
 		}
