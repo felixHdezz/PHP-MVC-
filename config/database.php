@@ -1,4 +1,5 @@
 <?php
+	// Parametros de conexión
 	return array(
 		"driver"   => "mysql",
 		"host"     => "localhost",
