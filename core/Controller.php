@@ -4,15 +4,15 @@
 		public function __construct()
 		{
 			require_once 'Connection.php';
-	        foreach(glob("model/*.php") as $file){
-	            require_once $file;
-	        }
+	        	foreach(glob("model/*.php") as $file){
+	            		require_once $file;
+	        	}
 		}
 
 		public function view(){
 			require_once 'core/HelpersViews.php';
-	        $helper=new HelpersViews();
-	        require_once 'view/'.DEFAULT_ACTION.'.php';
+	        	$helper=new HelpersViews();
+	       		require_once 'view/'.DEFAULT_ACTION.'.php';
 		}
 
 		public function _view($view, $data){
