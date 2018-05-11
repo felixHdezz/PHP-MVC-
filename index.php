@@ -1,6 +1,7 @@
 <?php 
 	// Include config global
 	require_once('./config/global.php');
+	// Include file controller
 	require_once('./core/Controller.php');
 	require_once('./core/LoadController.php');
 
